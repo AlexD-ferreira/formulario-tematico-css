@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>@-Games</title>
+    </head>
+    <body style="margin: 1; font-family: Castellar, Arial; background-color: #5C00C4; color: #F8F2FC;">
+        <header style="background-color: #8200FF; padding: 28px 20px; text-align: center; border-bottom: 4px solid #38DDF8;">
+            <h1 style="margin: 0; color :#FBFAFB; font-size : 34px; letter-spacing :1px;">@-Games</h1>
+            <p style="margin: 8px 0 18px 0;">O Maior Catalogo de Jogos da Web</p>
+            <nav style="background-color: #5C00C4; padding: 12px; border-radius: 8px; display: inline-block; border: 1px solid #334155;">
+                <a style="color: #FBFAFB; text-decoration: none; margin: 0 14px; font-weight: bold" href="#servicos">Serviços</a>
+                <a style="color: #FBFAFB; text-decoration: none; margin: 0 14px; font-weight: bold" href="comprar">Comprar</a>
+                <a style="color: #FBFAFB; text-decoration: none; margin: 0 14px; font-weight: bold" href="contato">Contato</a>
+                <a style="color: #FBFAFB; text-decoration: none; margin: 0 14px; font-weight: bold" href="#sobre">Sobre</a>
+            </nav> 
+        </header>
+        <hr>
+        <main style="max-width: 800px; margin: 28px auto; padding: 0 18px;">
+            <section id="servicos">
+                <article>
+                    <h1>Compre Seus Jogos e Jogue Quando Quiser</h1>
+                    <p>Mais liberbade sem ficar refem de assinaturas</p>
+                    <img src="imagens/loja-games.jpg" alt="A imagem mostra desejas de jogos midia fisica" width="280">
+                </article>
+                <article>
+                    <h2>Categorias</h2>
+                    <ul>
+                        <li><b>Ação</b></li>
+                        <li><b>Aventura</b></li>
+                        <li><b>RPG</b></li>
+                        <li><b>Tiro</b></li>
+                        <li><b>Esportes e Corrida</b></li>
+                        <li><b>Simulação</b></li>
+                    </ul>
+                </article>
+            </section>
+            <hr>
+            <section id="comprar">
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend><b> Comprar Jogos</b></legend>
+
+                        <label for="Campo-jogo">Selecione a Categotia:</label>
+                        <select name="selecao_jogo" id="campo-jogo" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="Acao">Ação</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="RPG">RPG</option>
+                            <option value="Tiro">Tiro</option>
+                            <option value="Esportes">Esportes e Corrida</option>
+                            <option value="Simulação">Simulação</option>
+                        </select>
+
+                        <p><b>Jogos</b></p>
+                        <input type="checkbox" name="jogos[]"
+                        id="jogo-futebol" value="futebol">
+                        <label for="jogo-futebol">Futebol</label>
+
+                        <input type="checkbox" name="jogos[]"
+                        id="jogo-gta" value="gta">
+                        <label for="jogo-gta">GTA VI</label>
+
+                        <input type="checkbox" name="jogos[]"
+                        id="jogo-elden" value="elden">
+                        <label for="jogo-elden">Elden Ring</label>
+
+                        <input type="checkbox" name="jogos[]"
+                        id="jogo-minecraft" value="minecraft">
+                        <label for="jogo-minecraft">Minecraft</label>
+
+                        <input type="checkbox" name="jogos[]"
+                        id="jogo-zelda" value="zelda">
+                        <label for="jogo-zelda">Zelda</label>
+                    
+                    </fieldset>
+                    <br>
+
+                    <button type="submit"><b>Confirmar Compra</b></button>
+                    <button type="reset"><B>Cancelar Compra</B></button>
+                </form>
+                <hr>
+            </section>
+            <section id="contato">
+                <h2>Entre em contato</h2>
+                <p>Preencha os dados abaixo:</p>
+                <forn action="#" method="POST">
+                    <fieldset>
+                        <legend><b> Informações Pessoais</b></legend>
+
+                        <label for="campo-nome">Nome Completo: </label><br>
+                        <input type="text", name="nome_completo" id="campo-nome"
+                        placeholder="Informe seu nome" required size="40"> <br>
+
+                        <label for="campo-email">Email Pessoal: </label><br>
+                        <input type="email", name="email_peassoal" id="campo-email"
+                        placeholder="Informe seu E-mail" required size="40"> <br>
+
+                         <label for="campo-telefone">Número telefone: </label><br>
+                        <input type="tel", name="numero_telefone" id="campo-telefone"
+                        placeholder="Informe seu Telefone" required size="40"> <br>
+
+                        <label for="campo-observacao">Observações ou Duvidas</label><br>
+                        <textarea nome="Observacoes_adcionais" id="campo-observacao" rows="4" cols="50"
+                         placeholder="Infrome aqui suas Duvidas"></textarea><br>
+
+                        <button type="submit"><b>Enviar</b></button>
+                    </fieldset>
+                    <hr>
+                </forn>
+            </section>
+            <section id="sobre">
+                <h2>Quem Somos</h2>
+                <p>Bem-vindo à <b>@-Games </b>, o ponto de encontro definitivo para quem vive e respira jogos.
+                Nascemos em [Ano de Fundação] da mente de gamers que, assim como você, já passaram noites em claro
+                 para platinar um jogo, vibraram com reviravoltas de roteiros épicos e conhecem a frustração de um 
+                 ag no momento crucial. Percebemos que o mercado precisava de mais do que apenas um site de vendas: 
+                 precisava de um espaço feito por jogadores, para jogadores.</p>
+                 
+                <h3>O que nós difência</h3>
+                 <ul>
+                    <li><b>Entrega Relâmpago: </b>Sabemos que a ansiedade pré-gameplay é real. Por isso, automatizamos 
+                    nosso sistema para que você receba seu jogo o mais rápido possível.</li>
+                    <li><b>Suporte de Jogador para Jogador: </b>Se você tiver qualquer dúvida ou problema, nossa equipe de
+                    atendimento não vai te tratar como um número. Nós entendemos a sua linguagem.</li>
+                    <li><B>Segurança Total:</B>Comprar na <b>@-Games </b> é 100% seguro. Trabalhamos apenas com chaves e mídias
+                    originais, protegendo seus dados e a sua conta.</li>
+                 </ul>
+            </section>
+        </main> 
+        <aside>
+            <h2>Funcionamneto</h2>
+            <p>Seguanda a sexta das 7:00 as 17:00</p>
+            <p>Rua-Clarimundo de oliveira 500 - Bicas -MG </p>
+            <P>(32-999999999)</P>
+        </aside>
+        <footer>
+            <p>&#x1f16d; @2026 @-Games LTDA. Todos direitos Reservados . Pertecente Alex Ferreira</p>
+        </footer>
+    </body>
+</html>
